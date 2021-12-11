@@ -1,1 +1,9 @@
-
+1. Create a virtual env with:
+conda create -n geo_env --file requirements.txt
+2. use the file requirements.txt while creating the env
+3. run the file python load_data.py to load the data by scraping it from the link ("http://download.geonames.org/export/dump/") and uploads it to S3.
+4. We have used an EMR cluster(m6gd) to clean the data and write the data back to S3
+5. We have used AWS Glue to extract the data from S3 and load it to Redshift
+6. For the ease of testing the programs, we have included the dataset in the gitlab server itself(inside apps folder)
+7. To run the code, do : streamlit run main.py 
+8. visualisations will open up in browser
