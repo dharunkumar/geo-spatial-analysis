@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from pyspark.sql import SparkSession, functions, types
 from pyspark.sql.types import *
 from pyspark.sql.functions import *
-spark = SparkSession.builder.appName('example code').getOrCreate()
+spark = SparkSession.builder.appName('feature_analysis_by_country').getOrCreate()
 sc = spark.sparkContext
 
 def app():
